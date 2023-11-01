@@ -1,0 +1,146 @@
+
+img{
+    width: 45px;
+}
+
+*{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}   
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.card-container{
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding :10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 8px 10px rgba(0, 0,0, 0.2);
+}
+
+.profile-pic-container{
+    border: 2px solid #4070f4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 32%;
+    width: 100%;
+    background-color: #4070f4;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.profile-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% ;
+    border: 2px solid #fff;
+    position: relative;
+}
+
+
+.person-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight:500;
+}
+
+.job{
+    padding-top :2px;
+    font-size: 14px;
+    font-weight:300;
+}
+
+.social-link{
+    display: flex;
+}
+
+.social-link img{
+    padding: 10px;
+}
+
+.card-buttons{
+    display: flex;
+}
+
+.card-buttons button{
+    padding: 5px 18px;
+    border : none;
+    background-color:#4070f4;   
+    margin: 7px;
+    color: white;
+    font-family:Poppins ;
+    border-radius: 18px;
+    font-size: 12px;
+}
+
+.card-reach{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.likes-container,.comments-container,.share-container{
+    display: flex;
+    padding: 0px 16px;
+    align-items: center;
+    height: 20px;
+}
+
+.likes-container{
+    border-right: 1px  rgb(207, 205, 205) solid;
+}
+
+.share-container{
+    border-left: 1px rgb(207, 205, 205) solid;
+}
+
+.heart-icon{
+    width: 13px;
+    margin: 5px;
+    height: 13px;
+}
+
+.comments-icon{
+    width: 13px;
+    margin: 5px;
+    height: 13px;
+}
+
+.share-icon{
+    width: 13px;
+    margin: 5px;
+    height: 13px;
+}
+
+.likes,.comments,.share{
+    font-size: 13px;
+    font-family: Poppins;
+}
