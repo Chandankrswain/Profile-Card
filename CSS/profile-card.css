@@ -101,6 +101,10 @@ body{
     font-size: 12px;
 }
 
+.card-buttons button:hover{
+    background-color: #2a60f5 ;
+}
+
 .card-reach{
     display: flex;
     margin-top: 10px;
